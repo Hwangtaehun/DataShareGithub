@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head><meta charset="utf-8"><title>JavaScript Sample</title></head>
+  <body>
+    <h2>JavaScript Sample</h2>
+    <script>
+      var n = 111;
+      var msg;
+      msg = n;
+      if(n % 2 == 0)
+        msg += " = 짝수, ";
+      else
+        msg += " = 홀수, ";
+      n++;
+      msg += n;
+      msg += (n % 2 == 0) ? " = 짝수":" = 홀수";
+      document.write("msg : " + msg + "<br>");
+      
+      for(n = 1; n <= 3; n++){
+        document.write("for n = " + n + "<br>");
+      }
+      while(n <= 5){
+        document.write("while n = " + n + "<br>");
+        n++;
+      }
+      do{
+        document.write("do n = " + n + "<br>");
+        n++;
+      } while(n < 9);
+      for(n = 1; n <= 10; n++){
+        if(n%2 == 0)
+          continue;
+        document.write("for n = " + n + "<br>");
+        if(n >= 5)
+          break;
+      }
+    </script>
+  </body>
+</html>

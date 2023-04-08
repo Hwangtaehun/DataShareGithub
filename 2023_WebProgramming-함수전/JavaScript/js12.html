@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head><meta charset="utf-8"><title>JavaScript Sample</title></head>
+    <body>
+        <h3>Java Script - 표준객체 1</h3>
+        <script type="text/javascript">
+            var num1 = new Number(10);
+            var num2 = new Object(10);
+            var num3 = 10;
+            document.write(typeof num1 + ", " + typeof(num2) + ", " + typeof num3 + ", " + "<br>");
+            document.write(num1.toString(2) + ", " + num2.toString(8) + ", " + num3.toString(16) + "<br>");
+            document.write((num1==num3) + ", " + (num1 === num3) + "<br>");
+            document.write(Number.MAX_VALUE + ", " + Number.MIN_VALUE + "<br>");
+
+            var str1 = new String("sejong1");
+            var str2 = new Object("sejong2");
+            var str3 = "sejong3";
+            document.write(str1.length + ", " + str2.toUpperCase() + "<br>");
+            document.write(str3.charAt(3) + ", " + str3.slice(3,6) + "<br>");
+            document.write(str3.substring(3,6) + ", " + str3.substring(3) + "<br>");
+            document.write(str3.replace("jong", "종") + "<br>");
+            document.write(str3.concat(str2, str1) + "<br>");
+
+            var b1 = new Boolean(false);
+            var b2 = false;
+            document.write(typeof b1 + ", " + typeof(b2) + "<br>");
+            if(b1)
+                document.write(" b1 true <br>");
+            else
+                document.write(" b1 false <br>");
+            if(b2)
+                document.write(" b2 true <br>");
+            else
+                document.write(" b2 false <br>");
+        </script>
+    </body>
+</html>

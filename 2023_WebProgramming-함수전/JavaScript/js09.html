@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head><meta charset="utf-8"> <title>JavaScript Sample</title>
+        <script type="text/javascript">
+            function myFunc1(){
+                document.write("인수 없는 함수 실행1<br>");
+            }
+            function myFunc1(){
+                document.write("인수 없는 함수 실행2<br>");
+                return 777;
+            }
+            function Recursive1(n) {
+                document.write("n=" + n + "<br>");
+                if(n > 1)
+                    Recursive1(n-1);
+            }
+            function Hap(n) {
+                if(n > 1)
+                    return (n + Hap(n-1));
+                else
+                    return 1;
+            }
+            var Exp1 = function(){
+                var a = 5;
+                var b = 3;
+                return a + b;
+            }
+            var Exp2 = function (a, b) {
+                return a + b;
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Java Script - 사용자 정의 함수 </h3>
+        <script type = "text/javascript">
+            var aa = myFunc1();
+            document.write("aa = " + aa + "<br>");
+            var result1 = Exp1();
+            document.write("result1 = " + result1 + "<br>");
+            var result2 = Exp2(10, 20);
+            document.write("result2 = " + result2 + ", Exp2(3,5) = " + Exp2(3,5) +  "<br>");
+            Recursive1(5);
+            for(var i = 1; i <= 5; i++){
+                result2 = Hap(i);
+                document.write("1 부터 " + i + "까지 합 = " + result2 + "<br>");
+            }
+        </script>
+    </body>
+</html>

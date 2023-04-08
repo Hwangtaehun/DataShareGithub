@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Style Sheet 사용</title>
+
+        <link type="text/css" rel="stylesheet" href="..\css\sjstyle1.css" />
+        <!-- <style>
+            @import url("../css/sjstyle1.css");
+        </style> -->
+    </head>
+    <!-- div 남용하지 말것, 페이지를 논리적 구간으로 분리하는 부가적 구조로 사용할 것-->
+    <body>
+        <div id="div1">
+            <h2>한반도 모양지형</h2>
+            <p><img src="..\images\korea.gif" alt="한반도모양 지형"/></p>
+            <p>
+                강원도 영월의 한반도
+                모양의 지형입니다.
+            </p>
+        </div>
+        <div id="div2">
+            <h2>학원 차량</h2>
+            <p><img src="..\images\sejongcar1.gif" alt="학원 차량"/></p>
+            <p>시골집에 서 있는 <span class="span1">학원</span>차량</p>
+            <p>
+                <a href="#flower1">그림1</a>
+                <a href="#flower2">그림2</a>
+                <a href="#flower2">그림2</a>
+            </p>
+            <ul>
+                <li><h2>C/C++ Programming</h2></li>
+                <li class="span1">Java Programming</li>
+                <li>Web Programming</li>
+                <li>NetWork Programming</li>
+                <li>DataBase Programming</li>
+            </ul>
+        </div>
+
+        <div id="div3">
+            <h2> 그림 1 </h2>
+            <p>
+                <a id="flower1"><img src="..\images\flower1.gif"></a>
+            </p>
+            <h2> 그림 2 </h2>
+            <p>
+                <a id="flower2"><img src="..\images\flower2.gif"></a>
+            </p>
+        </div>
+    </body>
+</html>

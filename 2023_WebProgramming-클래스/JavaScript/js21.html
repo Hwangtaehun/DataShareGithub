@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head><meta charset="utf-8"><title>JavaScript Sample</title></head>
+    <body>
+        <h2>Java Script - 내장함수</h2>
+        <script type="text/javascript">
+            var n = confirm("선택하세요");
+            document.write("n = " + n + " (" + typeof(n) + "형)<br>");
+            if(n)
+                alert("확인 선택");
+            else
+                alert("취소 선택");
+            var msg = prompt("이름을 입력하세요", "default");
+            document.write("당신의 이름은 " + msg + "입니다 <br>");
+
+            msg = prompt("계산식을 입력하세요", "5+3");
+            n = eval(msg);
+            document.write("eval("+msg+") = " + n + "<br>");
+            eval("var aa=5+3");
+            document.write("aa = " + aa + "<br>");
+
+            //var str1 = "123";
+            var str1 = "123+123";
+            if(isNaN(str1))
+                document.write("문자 포함된 str1 = " + str1 + "<br>");
+            else{
+                aa = Number(str1)*100;
+                document.write("Number(str1)*100 = " + aa + "<br>");
+            }
+            document.write("parseInt(\"1111\",2)=" + parseInt("1111", 2) + "<br>");
+            document.write("parseInt(\"17\",8) = " + parseInt("17", 8) + "<br>");
+            document.write("parseInt(\"15\") = " + parseInt("15") + "<br>");
+            document.write("parseInt(\"F\",16) = " + parseInt("F", 16) + "<br>");
+
+            var encode = encodeURI("세종컴퓨터");
+            document.write("encode Text = " + encode + "<br>");
+            var decode = decodeURI("%EC%84%B8%EC%A2%85%EC%BB%B4%ED%93%A8%ED%84%B0");
+            document.write("decode Text = " + decode);
+        </script>
+    </body>
+</html>

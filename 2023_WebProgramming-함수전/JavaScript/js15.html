@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head><meta charset="utf-8">
+        <title>JavaScript Sample</title>
+        <script type="text/javascript">
+            function myFunc1(msg) {
+                alert(msg + "에서 호출됨");
+            }
+            function myFunc2() {
+                var mId = document.getElementById("myId");
+                mId.innerHTML = "마우스가 영역안에 ";
+            }
+            function myFunc3() {
+                var mId = document.getElementById("myId");
+                mId.innerHTML = "빠져나옴 ";
+            }
+        </script>
+    </head>
+
+    <body onload="javascript:myFunc1('onload');">
+        <h3>Java Script - DOM(Document Object Model) </h3>
+        <p id="myyId" onmouseover="myFunc2()" onmouseout="myFunc3()">
+            Java Script 연습입니다.
+        </p>
+        <p><img id="flower2" src="..\images\flower2.gif" alt="꽃그림 2" style="cursor: pointer" onclick="myFunc1('꽃그림 2')"; /></p>
+        <p><img id="flower3" src="..\images\flower3.gif" alt="꽃그림 3" style="cursor: pointer" onclick="myFunc1('꽃그림 3')"; /></p>
+
+        <input type="button" name ="u_bt1" value="bt1" onclick="myFunc1(this.value)"><br>
+        <input type="button" name ="u_bt2" value="bt2" onclick="myFunc1(this.value)"><br>
+
+        <p id="myId"> Java Script 연습입니다. </p>
+        <script type="text/javascript">
+            var mId = document.getElementById("myId");
+            document.write("myid = " + mId.innerHTML + "<br>");
+        </script>
+    </body>
+</html>

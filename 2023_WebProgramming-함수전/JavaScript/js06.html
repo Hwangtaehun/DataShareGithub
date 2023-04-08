@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "ko">
+  <head> <meta charset="utf-8"> <title>JavaScript Sample</title> </head>
+  <body>
+    <h2>Java Script </h2>
+    <script>
+      var ss="aa";
+      switch(ss){
+        case "aa":
+          document.write("aa<br>");
+        case "bb":
+          document.write("bb<br>");
+          break;
+        default:
+          document.write("default<br>");
+      }
+      
+      var dan = prompt("몇 단을 출력할까요?", "");
+      for(i = 1; i <= 9; i++){
+        document.write(dan + "*" + i + "=" + dan*i+"<br>");
+      }
+      
+      for(i = 0; i <= 9; i++){
+        document.write("<img src='../images/"+i+".gif'> ");
+      }
+      document.write("<br>");
+      for(i = 0; i <= 9; i++){
+        document.write("<img src='../images/"+dan+".gif'> " + " * " + "<img src='../images/" + i + ".gif'> = ");
+        r = dan*i;
+        if(r<10)
+          document.write("<img src='../images/"+r+".gif'> ");
+        else{
+          r1 = parseInt(r/10);
+          r2 = r%10;
+          document.write("<img src='../images/"+r1+".gif'> <img src='../images/"+r2+".gif'> ");
+        }
+        document.write("<br>");
+      }
+    </script>
+  </body>
+</html>

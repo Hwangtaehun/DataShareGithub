@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head><meta charset="utf-8"><title>JavaScript Sample</title>
+        <script type="text/javascript">
+            var n1 = 10;
+            function myFunc1(){
+                document.write("인수 없는 함수 실행 n1+n3=" + n1 + n3 + "<br>");
+                document.write("인수 없는 함수 실행 (n1+n3)=" + (n1 + n3) + "<br>");
+            }
+            function myFunc2(n){
+                document.write("전달된 n = " + n + "<br>")
+            }
+            function myFunc3(n1, n2){
+                document.write("n1 = " + n1 + ", n2 =" + n2 + "<br>");
+                return (n1 + n2);
+            }
+            function myFunc5(n1){
+                var n2 = 222;
+                n3 = 30;
+                document.write("n1 = " + n1 + ", n2 = " + n2 + ", n3 = " + n3 + "<br>");
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Java Script 연습 6 - 사용자 정의 함수 </h3>
+        <script type ="text/javascript">
+            //myFunc1();
+            myFunc2(111);
+
+            var s = myFunc3(111, 222);
+            document.write("합 s = " + s + "<br>");
+
+            myFunc5(111);
+            myFunc1();
+            document.write("전역변수 n1 = " + n1 + ", n3 = " + n3 + "<br>");
+            //document.write("지역변수 n2 = " + n2 + "<br>");
+        </script>
+    </body>
+</html>

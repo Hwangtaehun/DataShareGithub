@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Sample</title>
+  </head>
+  <body>
+    <h2>연산자</h2>
+    <script>
+      var aa=10, bb=3, cc;
+      document.write("aa+bb="+ aa+bb + ", (aa+bb)=" + (aa+bb) + "<br>");
+      
+      cc = aa / bb;
+      dd = aa % bb;
+      document.write("cc = " + cc + ", dd = " + dd + "<br>");
+      
+      str1 = "aaa" + "bbb";
+      document.write("str1 = " + str1 + "<br>");
+      
+      r1 = aa > bb;
+      r2 = (aa==bb);
+      r3 = null==undefined;
+      document.write("r1=" + r1 + ", r2=" + r2 + ", r3=" + r3 + "<br>");
+      
+      r4 = aa>=10 && aa<20;
+      r5 = aa<10 || bb>20;
+      document.write("r4=" + r4 + ", r5=" + r5 + "<br>");
+      
+      r6 = "123" == 123;
+      r7 = "123" === 123;
+      document.write("r6=" + r6 + ", r7=" + r7 + "<br>");
+      //<![CDATA[
+        aa+=10;
+        bb++;
+        document.write("<h2>aa=" + aa + ", bb=" + bb + "</h2>");
+      //]]>
+    </script>
+  </body>
+</html>

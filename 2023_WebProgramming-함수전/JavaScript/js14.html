@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head><meta charset="utf-8"><title>JavaScript Sample</title></head>
+    <body>
+        <h3>Java Script - BOM(Brower Object Model) </h3>
+        <script type="text/javascript">
+            document.write("Browser의 좌표 : " + screenX + "px, " + window.screenY + "px<br>");
+            document.write("Browser의 크기 : " + innerWidth + "px, " + innerHeight + "px<br>");
+
+            document.write("전체 화면 크기 : " + screen.width + "px, " + screen.height + "px<br>");
+            document.write("작업표시줄 제외 크기 : " + screen.availWidth + "px, " + screen.availHeight + "px<br>");
+
+           //var win1 = window.open(",", 'width=200, height=200');
+
+           //location.href = "https://www.daum.net
+           document.write("location.href : " + location.href + "<br>");
+           document.write("location.hostname : " + location.hostname + "<br>");
+           document.write("location.protocol : " + location.protocol + "<br>");
+           document.write("location.pathname : " + location.pathname + "<br>");
+
+           document.write("navigator.appCodeName : " + navigator.appCodeName + "<br>");
+           document.write("navigator.appName : " + navigator.appName + "<br>");
+           document.write("navigator.cookieEnabled : " + navigator.cookieEnabled + "<br>");
+           document.write("navigator.language : " + navigator.language + "<br>");
+
+           document.write("방문한 WebPage 수 : " + history.length + "<br>");
+        </script>
+
+        <input type="button" value = "이전" onclick="javascript:history.back()">
+        <input type="button" value = "다음" onclick="javascript:history.forward()">
+        <input type="button" value = "2단계 이전" onclick="javascript:history.go(-2)">
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head><meta charset="utf-8"><title>JavaScript Sample</title></head>
+    <body>
+        <h3>Java Script - 사용자 정의 객체 </h3>
+        <script type="text/javascript">
+            var obj1 = new Object();
+            document.write(typeof obj1 + " : ", obj1, "<br>");
+            obj1.name = "sejong1";
+            obj1.score = 99;
+            obj1.prn = function() {
+                document.write("name1 = " + this.name + ", score = " + this.score + "<br>");
+            };
+            obj1.prn();
+
+            function UserObj(name, score) {
+                this.name = name;
+                this.score = score;
+                this.prn = function(){
+                    document.write("name2 = " + this.name + ", score = " + this.score + "<br>");
+                }
+            }
+            var obj2 = new UserObj("Sejong2", 88);
+            obj2.prn();
+
+            var obj3 = {
+                name: "sejong3",
+                score: 77,
+                prn: function() {
+                    document.write("name3 = " + this.name + ", score = " + this.score + "<br>");
+                },
+            }
+
+            obj3["name"] = "sejong4";
+            //delete obj3.name;
+            obj3.prn();
+
+            for(var i in obj3){
+                document.write(i + ":" + obj3[i] + "<br>");
+            }
+        </script>
+    </body>
+</html>

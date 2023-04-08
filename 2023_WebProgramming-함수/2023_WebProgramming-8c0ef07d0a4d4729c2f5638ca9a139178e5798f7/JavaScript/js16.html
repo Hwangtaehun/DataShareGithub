@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head><meta charset="utf-8">
+        <title>JavaScript Sample</title>
+    </head>
+    <body>
+        <h3>Java Script - JSON </h3>
+        <script type="text/javascript">
+            var obj1 = {
+                name: "sejong",
+                score: 77,
+                prn:function() {
+                    document.write("name3 = " + this.name + ", score = " + this.score + "<br>");
+                },
+            }
+            obj1.prn();
+            document.write("obj1 = " + obj1 + "<br>");
+
+            var json = JSON.stringify(obj1);
+            document.write("json = " + json + "<br>");
+
+            var obj2 = JSON.parse(json);
+            document.write("obj2 = " + obj2 + "<br>");
+            //obj2.prn();
+            document.write("obj2.name = " + obj2.name + " obj2.score = " + obj2.score + "<br>");
+
+            var obj3 = JSON.parse(json, function(key, value) {
+                    document.write(key + " " + value + "<br>");
+                }
+            );
+            var reg1 = new RegExp("^[0-9a-zA-Z]{4,8}$");
+            document.write(reg1.test("Ab123") + " ");
+            document.write(reg1.test("1234#") + " ");
+            document.write(reg1.test("abc") + "<br>");
+        </script>
+    </body>
+</html>
