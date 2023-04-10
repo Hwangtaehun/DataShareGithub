@@ -14,7 +14,7 @@ try{
     // deleteScore($pdo, $_POST['sc_id']);
     //deleteData($pdo, 'score', 'sc_id', $_POST['sc_id']);
 
-    $scoreTable = new TableManager($pod, 'score', 'sc_id');
+    $scoreTable = new TableManager($pdo, 'score', 'sc_id');
     $scoreTable->deleteData($_POST['sc_id']);
     header('location: sj6scoreList.php');
 }
