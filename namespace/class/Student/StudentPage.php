@@ -9,7 +9,7 @@ class StudentPage
     }
 
     public function makePage(){
-      include __DIR__.'/../../includes/DbConnect.php';
+      include __DIR__.'/../../includes/Dbconnect.php';
       //include __DIR__.'/../classes/TableManager.php';
       $stuTable   = new \SjFrame\TableManager($pdo, 'student', 'stu_no');
       $scoreTable = new \SjFrame\TableManager($pdo, 'score', 'sc_id');
