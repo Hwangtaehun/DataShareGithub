@@ -1,25 +1,25 @@
 Report created: 
-	2023-09-08	오전 10:55:17
+	2023-09-08	오전 11:44:48
 
 Project name: 9월8일.aep
 
 Source files collected to: 
-	C:\Users\A401-5\Desktop\새 폴더 (3)\9월8일 folder
+	C:\Users\A401-5\Desktop\새 폴더 (3)\9월8일 folder\9월8일 folder
 
 Source files collected: All
 
 Collected comps:  
-	ducklings-7993465_1920
+	123
+	mask
 	
-Number of collected files:  5
+Number of collected files:  4
 
-Size of collected files:  16.6 MB
+Size of collected files:  16.2 MB
 
 Collected source files: 
 	C:\Users\A401-5\Downloads\165065 (Original).mp4
 	C:\Users\A401-5\Downloads\ducklings-7993465_1920.jpg
 	C:\Users\A401-5\Downloads\red-8135048_1920.jpg
-	C:\Users\A401-5\Downloads\잉크소스 hd 10.mp4
 	C:\Users\A401-5\Videos\4K Video Downloader+\잉크소스 hd 07.mp4
 	
 Rendering plug-ins:
