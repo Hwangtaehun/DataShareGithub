@@ -1,0 +1,45 @@
+Report created: 
+	2023-09-15	오전 11:15:49
+
+Project name: 9월15일.aep
+
+Source files collected to: 
+	C:\Users\A401-5\Desktop\새 폴더 (3)\9월15일 folder\9월15일 folder
+
+Source files collected: All
+
+Collected comps:  
+	fianl
+	text
+	fianl_com
+	로고최종
+	반사
+	타이틀
+	
+Number of collected files:  3
+
+Size of collected files:  142 MB
+
+Collected source files: 
+	C:\Users\A401-5\Desktop\새 폴더 (3)\3주차 Project folder\(Footage)\Basic_2K_03.jpg
+	C:\Users\A401-5\Desktop\새 폴더 (3)\3주차 Project folder\(Footage)\logo.png
+	C:\Users\A401-5\Desktop\새 폴더 (3)\3주차 Project folder\(Footage)\오버워치 2 시네마틱 트레일러   “제로 아워”.mp4
+	
+Rendering plug-ins:
+	Classic 3D
+	
+Effects used:  4
+
+Effect:  CC Blobbylize
+	
+Effect:  CC Glass
+	
+Effect:  Curves
+	
+Effect:  Motion Tile
+	
+
+Layer:  Text Layer
+	External dependencies:  
+		Font family: “Baskerville Old Face”, Font style: “Regular”
+
