@@ -1,0 +1,42 @@
+Report created: 
+	2023-10-13	오전 11:42:28
+
+Project name: 10월 13일.aep
+
+Source files collected to: 
+	C:\Users\A401-37\Desktop\새 폴더 (2)\10월 13일 2번째folder
+
+Source files collected: All
+
+Collected comps:  
+	text
+	final
+	final
+	logo
+	effect
+	
+Number of collected files:  3
+
+Size of collected files:  1.2 MB
+
+Collected source files: 
+	C:\Users\A401-37\Desktop\10월6일 Project folder\(Footage)\도구툴\오버워치.png
+	C:\Users\A401-37\Desktop\7주차\helli.mp4
+	C:\Users\A401-37\Desktop\7주차\하트.png
+	
+Rendering plug-ins:
+	Classic 3D
+	
+Effects used:  3
+
+Effect:  CC Ball Action
+	
+Effect:  Glow
+	
+Effect:  Radial Wipe
+	
+
+Layer:  Text Layer
+	External dependencies:  
+		Font family: “Gulim”, Font style: “Regular”
+
