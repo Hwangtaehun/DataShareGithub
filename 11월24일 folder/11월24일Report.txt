@@ -1,5 +1,5 @@
 Report created: 
-	2023-11-24	오전 10:17:54
+	2023-11-24	오전 10:59:49
 
 Project name: 11월24일.aep
 
@@ -14,6 +14,11 @@ Collected comps:
 	손오공.png Comp 1
 	test2
 	coming soon Comp 1
+	test
+	coming soon text_comp
+	손오공.png Comp 2
+	test2
+	test3
 	
 Number of collected files:  2
 
@@ -26,11 +31,21 @@ Collected source files:
 Rendering plug-ins:
 	Classic 3D
 	
-Effects used:  2
+Effects used:  7
 
 Effect:  Starglow
 	
 Effect:  Twitch
+	
+Effect:  uni.Camera Shake
+	
+Effect:  uni.Glitch
+	
+Effect:  uni.Glitch Transition
+	
+Effect:  uni.Spectralicious Transition
+	
+Effect:  uni.Texturize
 	
 
 Layer:  Text Layer
