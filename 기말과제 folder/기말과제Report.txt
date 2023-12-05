@@ -1,10 +1,10 @@
 Report created: 
-	2023-12-05	오후 6:58:29
+	2023-12-05	오후 10:18:38
 
 Project name: 기말과제.aep
 
 Source files collected to: 
-	D:\Github\DataShareGithub\기말과제 folder
+	D:\Github\임시\기말과제 folder
 
 Source files collected: All
 
@@ -36,7 +36,7 @@ Collected comps:
 	link
 	text2_context
 	text3_context
-	book_fianl
+	book
 	text4_context
 	text5_context
 	title_saber
@@ -52,10 +52,11 @@ Collected comps:
 	map
 	title_saber
 	title
+	text6_context
 	
-Number of collected files:  23
+Number of collected files:  22
 
-Size of collected files:  623 MB
+Size of collected files:  576 MB
 
 Collected source files: 
 	D:\Github\gameprototape\과제2\동영상\광산.mp4
@@ -67,7 +68,6 @@ Collected source files:
 	D:\Github\gameprototape\과제2\동영상\바위치기.mp4
 	D:\Github\gameprototape\과제2\동영상\번개.mp4
 	D:\Github\gameprototape\과제2\동영상\불.mp4
-	D:\Github\gameprototape\과제2\동영상\산맥1.mp4
 	D:\Github\gameprototape\과제2\동영상\숲길.mp4
 	D:\Github\gameprototape\과제2\동영상\얼음.mp4
 	D:\Github\gameprototape\과제2\동영상\잉크소스.mp4
