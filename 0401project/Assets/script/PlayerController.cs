@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public float speed = 1.0f;
+    public GameObject Bullet_prefab;
+    GameObject myInstance;
+    public Transform firePos;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,12 +29,37 @@ public class PlayerController : MonoBehaviour
         //this.gameObject.transform.rotation = Quaternion.Euler(90.0f, 90.0f, 0.0f);
 
         //확대/축소
-        transform.localScale = new Vector3(1f, 2f, 3f);
+        //transform.localScale = new Vector3(1f, 2f, 3f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //Translate함수 실행
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.Translate(Vector3.left * speed * Time.deltaTime);
+        }
+        else if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.Translate(Vector3.right * speed * Time.deltaTime);
+        }
+        else if (Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.Translate(Vector3.up * speed * Time.deltaTime);
+        }
+        else if (Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.Translate(Vector3.down * speed * Time.deltaTime);
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            //myInstance = Instantiate(Bullet_prefab, new Vector3(0,0,0), Quaternion.identity);
+            Vector3 pos = this.gameObject.transform.position;
+
+            myInstance = Instantiate(Bullet_prefab, new Vector3(pos.x, pos.y, (pos.z + 1.0f)), Quaternion.identity);
+        }
     }
 }
