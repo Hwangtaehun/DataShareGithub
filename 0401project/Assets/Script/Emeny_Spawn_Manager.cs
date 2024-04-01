@@ -21,7 +21,7 @@ public class Emeny_Spawn_Manager : MonoBehaviour
         Vector3 spwan_pos = this.gameObject.transform.position;
         float x_random = Random.Range(-10.0f, 10.0f);
         
-        if (Time % 120 == 0)
+        if (Time % 30 == 0)
         {
             Instantiate(Enemy_Prefab, new Vector3(x_random, 1.0f, 10.0f), Quaternion.identity);
         }
