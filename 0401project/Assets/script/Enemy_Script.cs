@@ -16,11 +16,10 @@ public class Enemy_Script : MonoBehaviour
         // 절대 좌표 기준으로 이동
         transform.Translate(Vector3.forward * Time.deltaTime * 10.0f);
 
-
+        //일정이상 날아가면 없어짐-파괴 code
         if(this.gameObject.transform.position.z  <= -10.0f)
         {
             Destroy(this.gameObject); 
-
         }
     }
 
