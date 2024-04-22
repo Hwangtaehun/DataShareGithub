@@ -1,0 +1,9 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/NewUSSFile.uss?fileID=7433441132597879392&amp;guid=3f48f8c8ca7ff3c45a9d5b1494bcc5f0&amp;type=3#NewUSSFile" />
+    <engine:VisualElement style="flex-grow: 1; height: 77px; justify-content: flex-start;">
+        <engine:Label text="Label" style="-unity-text-align: upper-left;" />
+        <engine:Button text="Button" />
+        <engine:MinMaxSlider label="Min/Max Slider" value="10,12" low-limit="-10" high-limit="40" />
+        <engine:Slider label="Slider" value="0" high-value="100" />
+    </engine:VisualElement>
+</engine:UXML>
