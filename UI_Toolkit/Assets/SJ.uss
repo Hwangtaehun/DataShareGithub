@@ -1,0 +1,36 @@
+.label {
+    font-size: 20px;
+    -unity-font-definition: url("project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=8b72e9977d405614689ad810ff0995a8&type=3#NotInter-Regular");
+    color: rgb(173, 49, 36);
+    -unity-text-align: middle-center;
+    -unity-text-outline-width: 0;
+    -unity-text-outline-color: rgba(35, 255, 0, 0);
+    letter-spacing: 10px;
+    -unity-font-style: bold;
+}
+
+.image {
+}
+
+.button {
+    rotate: 30deg;
+    color: rgb(91, 255, 0);
+}
+
+.button:hover {
+    scale: 1.1 1.1;
+    background-color: rgba(188, 24, 24, 0);
+    font-size: 20px;
+}
+
+.button-blue {
+    -unity-background-image-tint-color: rgb(8, 54, 231);
+    color: rgb(0, 67, 255);
+}
+
+.button-blue:hover {
+    color: rgb(0, 255, 10);
+    scale: 1.2 1.2;
+    rotate: 30deg;
+    translate: 20px 0;
+}

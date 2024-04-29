@@ -1,0 +1,8 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/SJ.uss?fileID=7433441132597879392&amp;guid=a4624733af7fc0c4b9d27be3df5a0f62&amp;type=3#SJ" />
+    <engine:VisualElement name="VisualElement" class="image" style="flex-grow: 1; cursor: initial; max-width: none; min-width: auto; align-items: center; justify-content: center; align-self: auto; width: auto; height: auto; flex-direction: column;">
+        <engine:Button text="Test Button" name="TestButton" class="button-blue" style="rotate: 0; scale: 1 1;" />
+        <engine:Slider label="Slider" value="42" high-value="100" name="TestSlider" />
+        <engine:Toggle label="Toggle" name="TestToggle" />
+    </engine:VisualElement>
+</engine:UXML>
