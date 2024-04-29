@@ -1,0 +1,15 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Stelbalde_UI_Css.uss?fileID=7433441132597879392&amp;guid=52dfd5a9383a5ed478c7d1a81e8f1953&amp;type=3#Stelbalde_UI_Css" />
+    <Style src="project://database/Assets/Mario_UI_Css.uss?fileID=7433441132597879392&amp;guid=48a9a860a5ee60843af6e77eef32ec11&amp;type=3#Mario_UI_Css" />
+    <engine:VisualElement name="Main_Panel" style="flex-grow: 1; flex-direction: column; flex-wrap: nowrap; width: auto; height: 50%; background-image: none;">
+        <engine:Label text="선택" name="Test_Label" />
+        <engine:Button text="Button" name="Test_Button" class="button-stel" />
+        <engine:Toggle label="Toggle" name="Test_Toggle" />
+        <engine:DropdownField label="Dropdown" name="Test_Dropdown" />
+        <engine:RadioButton label="Radio Button" name="Test_RadioButton" />
+    </engine:VisualElement>
+    <engine:VisualElement name="Sub_Panel" style="flex-grow: 1;">
+        <engine:Label text="Label" name="Test_Label2" />
+        <engine:Button text="Button" class="button" />
+    </engine:VisualElement>
+</engine:UXML>

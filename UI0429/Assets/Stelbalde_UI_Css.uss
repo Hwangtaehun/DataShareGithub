@@ -1,0 +1,6 @@
+.button-stel {
+    font-size: 20px;
+    color: rgb(0, 11, 255);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-color: rgb(223, 255, 0);
+}
