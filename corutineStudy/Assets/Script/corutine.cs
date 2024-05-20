@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class corutine : MonoBehaviour
+public class corutine : MonoBehaviour //코루틴을 사용하면 유지보수가 쉬움
 {
     public bool isDelay;
     public float delayTime = 5.0f;
@@ -25,6 +25,7 @@ public class corutine : MonoBehaviour
             {
                 isDelay = true;
                 Debug.Log("HP가 50 회복 되었습니다.");
+                //StartCoroutine("Drink(interface_value)");
                 StartCoroutine(Drink(interface_value));
             }
             else
@@ -43,9 +44,9 @@ public class corutine : MonoBehaviour
     IEnumerator Drink(float test_value)
     {
         Debug.Log("코루틴시작");
-        yield return new WaitForSeconds(5.0f);
-        //yield return new WaitForEndOfFrame();
-        //yield return new WaitForFixedUpdate();
+        //yield return new WaitForSeconds(5.0f);
+        //yield return new WaitForEndOfFrame(); //쿨타임의미 없음
+        //yield return new WaitForFixedUpdate(); //한 프레임 넘어가서 다음 프레임에서 실행
 
         //다음 프레인 바로 시작 
         //yield return null;
@@ -54,9 +55,9 @@ public class corutine : MonoBehaviour
         //yield break; 
 
         //Debug.Log("코루틴이 받은 값" + test_value);
-        //yield return new WaitUntil(() => test_value > 3);
+        yield return new WaitUntil(() => test_value > 3); //중간에 조건이 변경이 안됨
 
-        //Debug.Log("코루틴 안 변수 출력" + test_value);
+        Debug.Log("코루틴 안 변수 출력" + test_value);
         isDelay = false;
     }
 }
