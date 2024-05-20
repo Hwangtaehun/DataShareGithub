@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class corutine : MonoBehaviour //코루틴을 사용하면 유지보수가 쉬움
+//코루틴을 사용하면 유지보수가 쉬움, 변수 가능하면 단순화하기위해서 사용->가독성이 좋음, 비동기 프로그램으로 작성가능
+public class corutine : MonoBehaviour
 {
     public bool isDelay;
     public float delayTime = 5.0f;

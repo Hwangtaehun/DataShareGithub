@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class withoutcorutine : MonoBehaviour //문제점: 업데이트 함수에 많은 코드가 있으면 가독성이 떨어짐, 일정 시간 return하는 것은 코루틴 사용
+//문제점: 업데이트 함수에 많은 코드가 있으면 가독성이 떨어짐, 일정 시간 return하는 것은 코루틴 사용
+public class withoutcorutine : MonoBehaviour
 {
     public bool isDelay; //false
     public float delayTime = 5.0f;
-    public float accumTime;
+    public float accumTime;//지역변수
 
     private void Update()
     {
