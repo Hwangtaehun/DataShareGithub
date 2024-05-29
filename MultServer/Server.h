@@ -27,6 +27,7 @@ private:
     int addrlen;
     char buf[BUFSIZE + 1];
 
-    void Err_quit(const char* msg);
-    void Err_display(const char* msg);
+    static void Err_quit(const char* msg);
+    static void Err_display(const char* msg);
+    static DWORD WINAPI ProcessClient(LPVOID arg);
 };
