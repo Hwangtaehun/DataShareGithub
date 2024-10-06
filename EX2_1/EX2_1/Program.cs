@@ -7,7 +7,7 @@ iVal = iVal + cVal;
 
 Console.WriteLine(iVal);
 
-Console.WriteLine(int.MinValue);
+Console.WriteLine(int.MaxValue);
 Console.WriteLine(UInt64.MinValue);
 Console.WriteLine(short.Parse("1234") + 4321);
 Console.WriteLine(cVal.ToString() + " *** " + 2000.ToString());
