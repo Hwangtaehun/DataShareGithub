@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "CnslApp": {
-      "commandName": "Project",
-      "commandLineArgs": "abc def 123 456"
-    }
-  }
-}
