@@ -1,0 +1,29 @@
+en
+!
+conf t
+!
+hostname SW2
+!
+enable secret cisco
+!
+banner motd #
+" You have entered a secured system. Authorized access only! #
+!
+servi password-enc
+!
+no ip domain-lookup
+!
+!
+line con 0
+exec-timeout 0 0
+logging synchronous
+password cisco
+login
+!
+line vty 0
+password cisco
+login
+!
+end
+!
+copy run start
