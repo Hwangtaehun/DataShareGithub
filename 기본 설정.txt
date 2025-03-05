@@ -13,6 +13,7 @@ servi password-enc
 !
 no ip domain-lookup
 !
+span mode ra
 !
 line con 0
 exec-timeout 0 0
