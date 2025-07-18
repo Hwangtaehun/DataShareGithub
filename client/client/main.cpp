@@ -57,6 +57,9 @@ int main(int argc, char* argv[])
         WSACleanup();
         return 1;
     }
+    buf[retval] = '\0';
+    printf("%s\n", buf);
+
 
     pk.SetConnect(MyIP());
     pk.GetBuf(buf);
@@ -231,8 +234,7 @@ DWORD __stdcall ThreadRecv(LPVOID arg) {
         pk.GetData(buf);
 
         // 받은 데이터를 화면에 출력
-        buf[retval] = '\0'; // 수신한 데이터 끝에 NULL 문자를 추가하여 문자열로 만듦
-        printf("\n[받은 데이터] %s", buf);
+        printf("[받은 데이터] %s\n", buf);
     }
     return 0;
 }

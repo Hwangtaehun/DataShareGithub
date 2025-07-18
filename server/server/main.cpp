@@ -79,7 +79,6 @@ int main(int argc, char* argv[]) {
     // 5. 클라이언트 접속 수락 루프
     while (1) {
         SOCKADDR_IN clientaddr;
-        ServerPacket pk = ServerPacket();
         int addrlen = sizeof(clientaddr);
         SOCKET client_sock = accept(listen_sock, (SOCKADDR*)&clientaddr, &addrlen);
         if (client_sock == INVALID_SOCKET) {
@@ -115,17 +114,20 @@ int main(int argc, char* argv[]) {
         char m_buf[BUFSIZE + 1];
         time_t timer = time(NULL);
         struct tm* t = localtime(&timer);
-        sprintf(m_buf, "%d년 %d월 %d일 %d시 %d분 %d초 %s", t->tm_year + 1900, t->tm_mon + 1, t->tm_mday, t->tm_hour, t->tm_min, t->tm_sec, inet_ntoa(clientaddr.sin_addr));
-        pk.SendAllConnect(m_buf);
-        pk.GetBuf(m_buf);
+        sprintf(m_buf, "%d년 %d월 %d일 %d시 %d분 %d초 %s, connection completed", t->tm_year + 1900, t->tm_mon + 1, t->tm_mday, t->tm_hour, t->tm_min, t->tm_sec, inet_ntoa(clientaddr.sin_addr));
 
-        memcpy(ptr->buf, m_buf, pk.GetSize());
-        ptr->recvbytes = pk.GetSize();
+        memcpy(ptr->buf, m_buf, strlen(m_buf));
+        ptr->recvbytes = strlen(m_buf);
         ptr->sendbytes = 0;
         ptr->sending = true;
 
         send(ptr);
-        broadcast(ptr, ptr->buf, ptr->recvbytes);
+        //broadcast(ptr, ptr->buf, ptr->recvbytes);
+
+        // 9. 비동기 데이터 수신(WSARecv) 요청
+        // 클라이언트로부터 데이터를 받기 위해 비동기 수신 함수를 호출합니다.
+        // 이 함수는 즉시 리턴되며, 데이터가 실제로 도착하면 IOCP 큐에 완료 통지가 쌓입니다.
+        //receive(ptr);
     }
 
     WSACleanup();
@@ -211,7 +213,7 @@ DWORD WINAPI WorkerThread(LPVOID arg) {
 
             if (req_con == pk.GetType()) {
                 memcpy(ptr->name, pk.GetName(), sizeof(pk.GetName()));
-                pk.SendAllConnect(m_buf);
+                pk.SendAllConnect(m_buf);;
             }
             else if (req_dis == pk.GetType()) {
                 time_t timer = time(NULL);
@@ -229,7 +231,6 @@ DWORD WINAPI WorkerThread(LPVOID arg) {
             pk.GetBuf(m_buf);
 
             // 받은 메시지를 다른 모든 클라이언트에게 전송 (브로드캐스트)
-            //broadcast(ptr, ptr->buf, cbTransferred);
             broadcast(ptr, m_buf, pk.GetSize());
 
             // 다음 메시지를 받기 위해 다시 비동기 수신을 요청합니다.
